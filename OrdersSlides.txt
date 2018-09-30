@@ -1,0 +1,55 @@
+%-----------------------------------------------------------------%
+% http://www.cs.odu.edu/~toida/nerzic/content/relation/order/order.html
+\begin{frame}
+Definition(partial order): 
+A binary relation R on a set A is a partial order if and only if it is 
+\begin{itemize}
+\item[(1)] reflexive, 
+\item[(2)] antisymmetric, and 
+\item[(3)] transitive. 
+\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------%
+\begin{frame}
+\frametitle{Partial Order}
+The ordered pair <A, R> is called a poset (partially ordered set) when R is a 
+partial order. 
+
+\begin{description}
+\item[Example 1:] The less-than-or-equal-to relation on the set of integers $I$ is a partial order, and the set I with 
+this relation is a poset. 
+
+\item[Example 2:] The subset relation on the power set of a set, say $\{1, 2\}$ , is also a partial 
+order, and the set $\{1, 2\}$  with the subset relation is a poset. 
+\end{description}
+
+\end{frame}
+%-----------------------------------------------------------------%
+\begin{frame}
+Definition(total order): A binary relation R on a set A is a total order if and 
+only if it is 
+
+\begin{itemize}
+\item[(1)] a partial order, and 
+\item[(2)] for any pair of elements  a and b of A,   < a, b >   R or < b, a >   R. 
+\end{itemize}
+
+That is, every element is related with every element one way or the other. 
+\end{frame}
+%-----------------------------------------------------------------%
+
+
+\begin{frame}
+The set of integers over the relation “less than equal to” is a
+total order; (Z, =) since for every a, b ? Z, it must be the case
+that a = b or b = a.
+\end{frame}
+%-----------------------------------------------------------------%
+%http://www.ics.uci.edu/~alspaugh/cls/shr/orderedSet.html
+The integers with = form an ordered set (see Figure 1).  = is a total order on the integers, so this ordered set is a chain. 
+Any powerset with ? forms an ordered set (see Figure 2).  This is a partially ordered set because not all subsets are related by ?, for example {a} || {b, r}. 
+A set of unrelated items, ordered by =, is the discrete order on that set and forms an antichain (see Figure 3). 
+The classes in java.util with the subclass relation form an ordered set (see Figure 4).  This set is partially ordered, because not all classes in the set are related by the subclass relations (for example, Vector and HashSet are not related and are thus incomparable:  Vector || HashSet). 
+A set of binary strings with the prefix relation forms an ordered set (see Figure 5).  This is set is partially ordered because not all strings are related by the prefix relation, for example 01 || 10. 
+The (non-empty) conjunctions of any of the propositions p, q, and r, ordered by implication, form an ordered set (see Figure 6).  In this set, p?q implies q, but p?q neither implies nor is implied by q?r, so p?q and q?r are incomparable (p?q # q?r) 

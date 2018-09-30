@@ -1,0 +1,54 @@
+
+
+
+%-------------------------------------------%
+\begin{frame}
+\frametitle{Relations}
+\Large
+What is an equivalence relation?\\
+\bigskip
+
+A relation is said to be an equivalence relation if it is all of the following:
+\begin{itemize}
+\item Symmetric
+\item Reflexive
+\item Transitive
+\end{itemize}
+
+\end{frame}
+%-------------------------------------------%
+\begin{frame}
+\frametitle{Relations}
+\Large
+\textbf{Reflexive Relations}
+\[ xRx \mbox{ for all} x\]
+\end{frame}
+%-------------------------------------------%
+\begin{frame}
+\frametitle{Relations}
+\Large
+\textbf{Symmetric Relations}
+
+\[ xRy \rightarrow yRx \mbox{ for all} x,y \]
+\end{frame}
+%-------------------------------------------%
+
+% Anti-Symmetric
+% Symmetric
+% Reflexive
+% Transitive
+
+%-------------------------------------------%
+\section{Partial Order}
+%-------------------------------------------%
+\begin{frame}
+\frametitle{Relations}
+\Large
+\begin{itemize}
+\item Anti-symmetric
+\item Reflexive
+\item Transitive
+\end{itemize}
+\end{frame}
+%-------------------------------------------%
+\end{document}

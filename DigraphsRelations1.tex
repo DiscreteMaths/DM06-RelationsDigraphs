@@ -1,0 +1,141 @@
+\documentclass[]{article}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+%opening
+
+\begin{document}
+\subsection*{Chapter 6: Digraphs and Relations}
+%--------------------------------------------- %
+%------------------------------------------ %
+Definition 1.8 If a relation $\mathcal{R}$ cle5necl on a set S is reflexive, symmetric and transitive, 
+then we say that $\mathcal{R}$ is an equivalence relation on S.
+The relation ":" defined on any set S is an example of en equivalence relation
+on S. 
+
+Indeed equivalence relations can be seen as generalizations of the "equality"
+relation, lf two elements of a set are related by an equivalence relation, then they
+are in some sense equivalent.
+%------------------------------------------------------
+
+
+
+\noindent \textbf{Example 1.9} Let S be the set of all 3»bit binary strings. Define a relation $\mathcal{R}$ on
+S by saying that two binary strings are related if they contain the same number
+of ones. Thus $100 R 010$ but 100 is not related to 101. Then $\mathcal{R}$ is an equivalence
+relation on S.
+%------------------------------------------------------
+
+
+\noindent \textbf{Definition 1.10} Let $\mathcal{R}$ be an equivalence relation defined on a. set S and x E S.
+Then the equivalence class of m is the subset of S containing all elements of S
+which are related to x. We denote this by [:c]. Thus
+{2*] : {y E S : 34722:}.
+%------------------------------------------------------ 
+Example 1.11 In Example 1.9, the equivalence class of a 3-bit binary string n: is
+the set of all 3-bit binary strings which contain the same number of ones as ac. This
+gives us four distinct eqivalence classes: [000] : {000}, [100] : {100,010, 001] :
+[010} = {001}, [110] : {110, 011, 101} : {011] : [101}, and {111} : {lll}.
+%------------------------------------------------------ 
+Example 1.11 has the following nice structural properties.
+
+\begin{itemize}
+\item Every element of S belongs to exactly one of the four distinct equivalence
+classes.
+
+\item Two elements ofS are related if and only if they belong Lo the same equivalence
+class.
+\end{itemize}
+%------------------------------------------------------ 
+We shall see that these properties hold for all equivalence relations. We first need
+one more definition.
+%------------------------------------------------------ 
+
+
+\noindent \textbf{Definition 1.12} Let S be a set and T : {5],5;, .. ,5,,,} be a set of uomempty
+subsets of S. Then T is said to be a \textbf{partition} of S if every element of 5 belongs
+to exactly one element of T,
+
+
+%------------------------------------------------------ 
+\noindent \textbf{Example 1.13} In Example 1.9, let T be the set whose elements are the four distinct
+equivalence classes. Thus
+\[T : {{000},{00,010,001},{110,011,101},{111}}\]
+Then T is a partition of S.
+Our promised result on equivalence relations is:
+%------------------------------------------------------ 
+Theorem 1.14 Let 72, be an equivalence relation on a set S. Then:
+
+\begin{itemize}
+\item The set of distinct equivalence classes of 72 in S is a partition of S.
+\item Two elements ofS are related if and only lf they belong to the same equivalence
+class.
+\end{itemize}
+%----------------------- %
+The proof of this result is beyond the scope of this course Theorem 1.14 tells us
+that if we have an equivalence relation R defined on a set S, then we can think
+of the equivalence classes as the subsets of S containing all the elements which are
+“\textit{equivalent}" to each under this relation. 
+%---------------- %
+The relationship digraph corresponding
+to the equivalence relation falls into distinct components, one component for each
+equivalence class. Inside each component every vertex is incident to a directed loop
+and every pair of vertices are joined by a directed cycle of length two.
+%--------------------------------------------- %
+\subsubsection*{Partial orders}
+In the previous subsection we looked an equivalence relations as a generalisation of
+the relation "=”. In this subsection we will consider relations which gerneralise the
+relation “S”.
+%--------------------------------------------- %
+Definition 1.15 We say that a relation 72 on a. set S is \textbf{\textit{anti-symmetric}} if for all
+z,y 6 S such that 1/R.y and yR.z:, we have z : y. 
+
+Thus 72, is anti-symmetric if and
+only if the relationship digraph of 'R has no directed cycles of length two,
+lt follows that the relations described in Examples 1.3, 1.5 and 1.9 are not antl-
+symmetric. 
+%---------------- %
+Examples of relations which are antisymmetric are "g" on any set of
+numbers, and "Q’ on the set of all subsets of a given set,
+%--------------------------------------------- %
+Definition 1.16 
+We say that a relation $\mathcal{R}$ on a set S is a \textit{\textbf{partial order}}- if it is
+reflexive, anti-symmetric and transitive. 
+
+We say further that $\mathcal{R}$ is an order if it is a partial order with the additional property that for any two elements m, y E S,
+either z'Ry or y'R,x.
+%--------------------------------------------- %
+It follows that S is an example of an order on any set of numbers. Au example
+of a partial Order which is not an order is the following.
+%--------------------------------------------- %
+\textbf{Example 1.17} Let $U : \{1, 2,3\}$ and S : ’P[U) be the set of all subsets of U. Then
+Q is a partial order on S. It is not an order, however, since if we let X : {1,*2} and
+Y : {1,3} then X Q Y and Y Q X. Thus X and Y are two elements of S such
+that X is not related to Y, aud Y is not related no X.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./Digraph3}
+\caption{}
+\label{fig:Digraph3}
+\end{figure}
+
+Figure 1.3: The relationship digraph of Example 1.20
+\newpage
+%--------------------------------------------- %
+\subsection*{Relations and Cartesian products}
+ln the previous subsections we considered relations between the elements of a single
+set S. We now extend this concept to define relations between the elements of two
+sets.
+%--------------------------------------------- %
+\textbf{Defiition 1.18} Let X and Y be sets. Then a relation 72 from X to Y is a rule
+which compares any two elements $x \in X$ and $y in Y$, and tells us either that r is
+related to y or that z is not related to y.
+%--------------------------------------------- %
+Relations between two sets are fundamental to databases, as can be seen from
+the following example.
+
+
+\end{document}
