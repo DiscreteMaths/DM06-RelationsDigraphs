@@ -1,0 +1,358 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+
+% http://www.textbooksonline.tn.nic.in/books/12/std12-bm-em-1.pdf
+
+%-----------------------------------------------%
+%-----------------------------------------------%
+
+\section{What is a digraph?}
+\begin{itemize}
+\item Short for a ``\textit{Directed Graph}".
+\item Comprised of vertices and edge (common to all area of graph theory, but edges are directed - often indicated with arrows)
+\item Useful for visualizing relations.
+\item Very useful for a variety of IT applications (e.g. Multistate process (behaviour of AI player) and project management).
+\item 
+\end{itemize}
+%-----------------------------------------------%
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.8\linewidth]{./ex1}
+% \caption{Example of Digraph}
+% \label{fig:ex1}
+% \end{figure}
+%-----------------------------------------------%
+%---------------------------------------%
+\subsection*{Directed Graphs}
+A directed graph or digraph is a graph, or set of nodes connected by edges, where
+ the edges have a direction associated with them. In formal terms a digraph is a pair $G=(V,A)$(sometimes $G=(V,E)$) of a set $V$, whose elements are called vertices or nodes, and a set $A$ of ordered pairs of vertices, called arcs, directed edges, or arrows (and sometimes simply 'edges' with the corresponding set named E instead of A).
+
+\subsection{What is a relation?}
+\begin{itemize}
+\item 
+\item 
+\item 
+\item Useful for mathematically expressing behaviour and interaction of AI players in computer games.
+\end{itemize}
+
+
+
+%-----------------------------------------------%
+
+
+\subsection{Digraphs and Relations}
+\textbf{What is a digraph?}
+\begin{itemize}
+\item Short for a ``\textit{Directed Graph}".
+\item Comprised of vertices and edge (common to all area of graph theory, but edges are directed - often indicated with arrows)
+\item Useful for visualizing relations.
+\item Very useful for a variety of IT applications (e.g. Multistate process (behaviour of AI player) and project management).
+\item 
+\end{itemize}
+
+
+
+%-----------------------------------------------%
+
+\subsection{Digraphs and Relations}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.8\linewidth]{./ex1}
+%\caption{Example of Digraph}
+%\label{fig:ex1}
+%\end{figure}
+
+\textbf{What is a relation?}
+\begin{itemize}
+
+\item Useful for mathematically expressing behaviour and interaction of AI players in computer games.
+\end{itemize}
+
+% http://www.math.vt.edu/people/elder/Math3034/book/3034Chap5.pdf
+%
+%-----------------------------------------------%
+
+If S is a set, we will use the symbol “R” to denote either an abstract relation or a specific
+relation for which there is no standard notation. For $a, b \in S$ we will write a R b, not
+$(a, b) \in R$, to indicate that a and b are related.
+
+\begin{itemize}
+\item Definition1: Let R be a relation of a set S. We say that R is reflexive provided for all
+$a \in S$, a R a.
+
+\item Definition2: Let R be a relation of a set S. We say that R is symmetric provided for
+all $a, b \in S$, if a R b then b R a.
+
+\item Definition3: Let R be a relation of a set S. We say that R is transitive provided for
+all $a, b,c \in S$, if a R b and b R c then a R c.
+\end{itemize}
+
+\subsection*{Chapter 6: Digraphs and Relations}
+%-https://en.wikibooks.org/wiki/Set_Theory/Orderings
+
+Definitions[edit]
+Relations with certain properties that impose a notion of order on a set are known as order relations or simply orderings. For the following definitions, let R be a binary relation.
+
+If R is reflexive and transitive, then it is known as a preorder.
+If R is a preorder and also antisymmetric, then it is known as a partial order.
+If R is a partial order and also total, then it is known as a total order or a linear order.
+
+A set equipped with a preorder, partial order, or total order is known as a preordered set, partially ordered set (or poset), or totally ordered set (or linearly ordered set) respectively. An order relation is usually denoted by the symbol $\le$ and an ordered set is denoted by the ordered pair ( S , $\le$ ) where $\le$ is the order relation on S.
+
+A totally ordered subset of a partially ordered set is known as a chain. For this reason, any totally ordered set may sometimes be referred to as a chain.
+
+Two elements a and b in a preordered (and thus in a partially or totally ordered) set are called comparable if either $a \le b$ or $b \le a$. Note that while totality guarantees that every two elements in a totally ordered set are comparable, two elements in a pre or partially ordered set may not be so.
+
+%=====================================================================================%
+\section{Equivalences}
+Another important type of relation is the equivalence relation. This is a relation R that is reflexive, symmetric, and transitive (or, simply a preorder that is also symmetric). When R is an equivalence relation, we usually denote it by $\sim$ or $\equiv$. A set equipped with an equivalence relation is also known as a setoid.
+
+If $\sim$ is an equivalence relation on a set S, we define for an element $s \in S$ the equivalence class of s as $\{a \in S : a \sim s\}$. This is usually denoted by [s]. 
+
+The set of all equivalence classes of S is known as the quotient set of S by $\sim$, which we denote by $S/\!\sim\ = \{[x] : x \in S\}$.
+
+A partition of a set S is a family of sets $\mathcal{S}$ such that $\mathcal{S}$ is pairwise disjoint and $\bigcup \mathcal{S} = S$. The proof of the following theorems about equivalence relations are left to the reader.
+
+Theorem: If S is a set and $\sim$ is an equivalence relation on S, then $S/\!\sim$ is a partition of S.
+
+Theorem: Let S be a set and P a partition of S. Define a relation $\star$ such that for $a, b \in S$, $a \star b$ holds if and only if there exists a member of P which contains both a and b. Then, $\star$ is an equivalence relation.
+
+%==========================================================================================%
+\newpage
+
+\subsection{Digraphs and Relations}
+\textbf{Important Terminology for Relations}
+\begin{itemize}
+\item Reflexive,
+\item Symmetrix,
+\item Transitive,
+\item Equivalence Relation.
+\end{itemize}
+
+\subsection{Example}
+Let $S$ = $\{ a,b,c,d \}$ and suppose that a relation $\mathcal{R}$ is defined on S in precisely the following cases:
+
+\[ a\mathcal{R}a , a\mathcal{R}b , a\mathcal{R}c , b\mathcal{R}b, b\mathcal{R}c , c\mathcal{R}d  \]
+
+
+
+
+\[ a\mathcal{R}a , a\mathcal{R}b , a\mathcal{R}c , b\mathcal{R}b, b\mathcal{R}c , c\mathcal{R}d  \]
+
+\begin{itemize}
+    \item The relation $\mathcal{R}$ is not \textbf{reflexive}. \\ \bigskip Which minimal set of pairs should be added to  $\mathcal{R}$  to make it reflexive?
+
+
+\item The relation $\mathcal{R}$ is not \textbf{symmetric}. \\\bigskip Which minimal set of pairs should be added to  $\mathcal{R}$  to make it symmetric.?
+
+
+\item The relation $\mathcal{R}$ is not \textbf{transitive}. \\ \bigskip Which minimal set of pairs should be added to  $\mathcal{R}$  to make it transitive?
+\end{itemize}
+
+\newpage
+%---------------------------------------%
+\subsection{Directed Graphs}
+A directed graph or digraph is a graph, or set of nodes connected by edges, where the edges have a direction associated with them. In formal terms a digraph is a pair $G=(V,A)$(sometimes $G=(V,E)$) of a set $V$, whose elements are called vertices or nodes, and a set $A$ of ordered pairs of vertices, called arcs, directed edges, or arrows (and sometimes simply 'edges' with the corresponding set named E instead of A).
+
+
+%--------------------------------------%
+\subsection{Recurrence Relation}
+In mathematics, a recurrence relation is an equation that recursively defines a sequence, once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.
+The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However, "difference equation" is frequently used to refer to any recurrence relation.
+
+
+
+
+\section{Antisymmetric Relations}
+
+\begin{itemize}
+\item A binary relation $R$ on a set $X$ is \textbf{antisymmetric} if there is no pair of distinct elements of X each of which is related by $R$ to the other. 
+
+\item More formally, $R$ is antisymmetric precisely if for all a and b in $X$ :\\
+if $R(a,b)$ and $R(b,a)$, $then a = b$,
+
+\item Intuitively, an antisymmetric relation has no symmetric pairs. Consider the relation: 
+
+\[R = { (0,0) , (0,1) , (1,0) } ,\] this relation is symmetric. 
+
+In the example stated, the pair (1,0) and (0,1) are symmetric, so this violates the antisymmetric condition. An example of a relation that is antisymmetric is $R=\{(0,0),(0,1)\}$.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cartesian Product}
+\begin{itemize}
+\item A relation $R$ from a set A to a set B is a subset of the
+\textbf{cartesian product} A x B. 
+\item Thus R is a set of \textbf{ordered pairs} where
+the first element comes from A and the second element comes
+from B i.e. $(a, b)$
+\end{itemize}
+
+\section*{The Cartesian Product}
+The Cartesian product (or cross product) of sets A and B, denoted by
+$A \times B$, is the set defined as
+\[A \times  B = \{(a, b) | a \in A and b \in B\}.\]
+Importantly the elements $(a, b)$ are an \textit{ordered pair} from A and B respectively.
+\subsection*{Example}
+Given two sets A and B
+\begin{itemize}
+\item $A = \{2, 3 4\}$
+\item $B = \{4, 5\}$
+\end{itemize}
+Compute the Cartesian Producs $A\times B$ and $B \times A$.\\
+\textbf{Solutions:}
+\[ A\times B = \{(2, 4),(2, 5),(3, 4),(3, 5),(4, 4),(4, 5)\}\]
+\[ B\times A = \{(4, 2),(4, 3),(4, 4),(5, 2),(5, 3),(5, 4)\}\]
+
+
+
+
+
+\subsection{Cartesian Product}
+{
+\begin{itemize}
+\item Let $X$ and $Y$ be sets.
+\item The \textbf{cartesian product} $X \times Y$ is the set whose elements are \textbf{all} of the ordered pairs of elements $(x,y)$ where $x \in X$ and $y \in Y$.
+\end{itemize}
+
+
+\begin{itemize}
+\item Let $X = \{a,b,c\}$
+\item Let $Y = \{0,1\}$ 
+\item The cartesian product $X \times Y$ is therefore:
+\end{itemize}
+
+\begin{itemize}
+\item Importantly $X \times Y \neq Y \times X$
+\item Recall: Let $X = \{a,b,c\}$ and let $Y = \{0,1\}$ 
+\item The cartesian product $Y \times X$ is therefore:
+\end{itemize}
+}
+
+
+%--------------------------------------------------------%
+\newpage
+
+\begin{itemize}
+
+\item  If $(a, b) \in R$ we say that $a$ is related to $b$ and write $aRb$.
+\item If $(a, b) \notin R$, we say that $a$ is not related to $b$ and write $aRb$. CHECK
+\item If
+$R$ is a relation from a set $A$ to itself then we say that ``$R$ is a relation
+on $A$".
+
+\item Let $A = \{2, 3, 4, 6\}$ and $B = \{4, 6, 9\}$
+\item Let R be the relation from A to B defined by \textit{\textbf{xRy}} if $x$
+divides $y$ exactly.
+
+
+\item Let $A = \{2, 3, 4, 6\}$ and $B = \{4, 6, 9\}$
+\item Let R be the relation from A to B defined by \textit{\textbf{xRy}} if $x$
+divides $y$ exactly.
+\item  Then
+\[R = {(2, 4), (2, 6), (3, 6), (3, 9), (4, 4), (6, 6)}\]
+\end{itemize}
+
+
+
+
+
+
+
+%-----------------------------------------------------%
+\section*{Question 6}
+
+
+
+\subsection*{Part C : Partial Orders}
+% http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=20
+
+Let $A=\{0,1,2\}$ and $R=\{ (0,0),(0,1),(0,2),(1,1), (1,2), (2,2)\}$
+and $S=\{(0,0),(1,1),(2,2)\}$ be 2 relations on A. Show that
+
+\begin{itemize}
+\item[(i)] R is a partial order relation.
+\item[(ii)] S is an equivalence relation.
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------%
+
+\subsubsection{Relations}
+
+What is an equivalence relation?\\
+\bigskip
+
+A relation is said to be an equivalence relation if it is all of the following:
+\begin{itemize}
+\item Symmetric
+\item Reflexive
+\item Transitive
+\end{itemize}
+
+
+%-------------------------------------------%
+
+\subsubsection{Relations}
+
+\textbf{Reflexive Relations}
+\[ xRx \mbox{ for all} x\]
+
+%-------------------------------------------%
+
+\subsubsection{Relations}
+
+\textbf{Symmetric Relations}
+
+\[ xRy \rightarrow yRx \mbox{ for all} x,y \]
+
+%-------------------------------------------%
+
+% Anti-Symmetric
+% Symmetric
+% Reflexive
+% Transitive
+
+%-------------------------------------------%
+\section{Summary}
+\noindent \textbf{Important Terminology for Relations}
+\begin{itemize}
+\item Reflexive,
+\item Symmetrix,
+\item Transitive,
+\item Equivalence Relation.
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Reflexive}: 
+\item \textbf{Symmetric}: 
+\item \textbf{Transitive}: 
+\item \textbf{Anti-symmetric}: 
+\item \textbf{Equivalence Relation}: 
+\item \textbf{Partial Order}:
+\item \textbf{Order}:
+\end{itemize}
+
+%-------------------------------------------%
+\end{document}
